@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>My CRUD in NodeJS</title>
+</head>
+<body>
+
+    <%if (data) { %>
+      <h2 class="title">Edit Product<h2>
+          <form action="/products/<%= data._id %>/update" method="POST">
+            <input type="text" placeholder="Name" name="name" value="<%= data.name %>">
+            <input type="text" placeholder="Price" name="price" value="<%= data.price %>">
+            <button type="submit">Submit</button>
+        </form> 
+    <% } %>
+    <%if (!data) { %>
+      <h2 class="title">Add Product<h2>
+          <form action="/products/create" method="POST">
+            <input type="text" placeholder="Name" name="name">
+            <input type="text" placeholder="Price" name="price">
+            <br>
+            <button type="submit">Submit</button>
+        </form> 
+    <% } %>
+
+    <a class="button mt-10" href="/products/list">List of products</a>
+   
+</body>
+</html>

@@ -1,0 +1,70 @@
+#prodTable {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #prodTable thead {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  #prodTable thead td {
+    padding: 8px;
+  }
+  
+  #prodTable tbody td, #prodTable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 15px;
+  }
+  
+  #prodTable tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #prodTable tbody tr:hover {background-color: #ddd;}
+  
+  #prodTable th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .button{
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .button:hover{
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .mt-10{
+      margin-top: 10px;
+  }
+
+  input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+  }
+  
+  input[type=text]:focus {
+    background-color: lightblue;
+  }
