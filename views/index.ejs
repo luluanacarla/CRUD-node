@@ -11,8 +11,8 @@
       <h2 class="title">Edit Product<h2>
           <form action="/products/<%= data._id %>/update" method="POST">
             <input type="text" placeholder="Name" name="name" value="<%= data.name %>">
-            <input type="text" placeholder="Price" name="price" value="<%= data.price %>">
-            <button type="submit">Submit</button>
+            <input type="text" placeholder="Price" name="price" value="<%= data.price %>"><br>
+            <button class="button" type="submit">Submit</button>
         </form> 
     <% } %>
     <%if (!data) { %>
@@ -21,7 +21,7 @@
             <input type="text" placeholder="Name" name="name">
             <input type="number" placeholder="Price" name="price">
             <br>
-            <button type="submit">Submit</button>
+            <button class="button" type="submit">Submit</button>
         </form> 
     <% } %>
 
